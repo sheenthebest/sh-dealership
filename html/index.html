@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealership UI by sheen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="dealership-ui" class="hidden">
+        <div class="container hidden">
+            <header>
+                <div class="header-content">
+                    <div class="logo-title">
+                        <img src="images/logo.png" alt="Logo" class="logo">
+                        <h1 class="dealership-title">Sheeny Dealership</h1>
+                    </div>
+                    <div class="header-center">
+                        <div class="search-container hidden" id="search-container">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="search" placeholder="Search...">
+                        </div>
+                        <div class="filters-container hidden" id="filters-container">
+                            <span class="filters-label">Order by:</span>
+                            <select id="order" class="custom-select">
+                                <option value="low_price">Low Price</option>
+                                <option value="high_price">High Price</option>
+                                <option value="a_to_z">A to Z</option>
+                                <option value="z_to_a">Z to A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-left hidden" id="back"></i>
+                </div>
+            </header>
+            <main id="category-list" class="fade-in"></main>
+            <main id="vehicle-list" class="hidden fade-in"></main>
+        </div>
+    </div>
+
+    <div id="vehicle-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="vehicle-name"></h2>
+            <img id="vehicle-image" src="" alt="Vehicle Image">
+            <p id="vehicle-price"></p>
+            <div class="configuration">
+                <label for="color">Color:</label>
+                <input type="color" id="color">
+                <label for="engine">Engine:</label>
+                <select id="engine">
+                    <option value="standard">Standard</option>
+                    <option value="performance">Performance</option>
+                </select>
+                <label for="suspension">Suspension:</label>
+                <select id="suspension">
+                    <option value="standard">Standard</option>
+                    <option value="sport">Sport</option>
+                </select>
+                <label for="turbo">Turbo:</label>
+                <input type="checkbox" id="turbo">
+            </div>
+            <button id="confirm-purchase" class="buy-button">Confirm Purchase</button>
+        </div>
+    </div>
+</body>
+</html>
