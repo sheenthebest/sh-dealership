@@ -2,6 +2,10 @@
 
 This project is a Work in Progress.
 
+## Showcase
+![Screenshot](https://github.com/sheenthebest/sh-dealership/blob/main/screen.jpg?raw=true)
+![Screenshot](https://github.com/sheenthebest/sh-dealership/blob/main/screen2.jpg?raw=true)
+
 ## Overview
 
 This repository contains the UI for a FiveM script where players can purchase vehicles. The UI is built using HTML, CSS, and JavaScript, providing a smooth and interactive experience for the users.
